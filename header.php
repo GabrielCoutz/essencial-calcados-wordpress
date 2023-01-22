@@ -17,7 +17,7 @@
 	<header class="mx-4">
 		<nav class="navbar navbar-expand-lg header px-md-4 px-1 container mt-4">
 			<div class="container-fluid">
-				<h1 class="navbar-brand fs-4 m-0"> <a href="/">Essencial Calçados</a>
+				<h1 class="navbar-brand fs-4 m-0 text-uppercase"> <a href="/">Essencial Calçados</a>
 				</h1>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,19 +26,28 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					<ul class="navbar-nav align-items-lg-center align-items-end fs-5">
 						<li class="nav-item ms-md-4 py-lg-1 py-3">
-							<a class="nav-link <?php if ( is_page( 'loja' ) ) {
+							<a class="nav-link 
+							<?php
+							if ( is_page( 'loja' ) ) {
 								echo ( 'active' );
-							} ?>" href="/loja">Todos produtos</a>
+							} ?>
+							" href="/loja">Todos produtos</a>
 						</li>
 						<li class="nav-item ms-md-4 py-lg-1 py-3">
-							<a class="nav-link <?php if ( is_page( 'destaques' ) ) {
+							<a class="nav-link 
+							<?php
+							if ( is_page( 'destaques' ) ) {
 								echo ( 'active' );
-							} ?>" href="/destaques">Destaques</a>
+							} ?>
+							" href="/destaques">Destaques</a>
 						</li>
 						<li class="nav-item ms-md-4 py-lg-1 py-3">
-							<a class="nav-link <?php if ( is_page( 'contato' ) ) {
+							<a class="nav-link 
+							<?php
+							if ( is_page( 'contato' ) ) {
 								echo ( 'active' );
-							} ?>" href="/contato">Contato</a>
+							} ?>
+							" href="/contato">Contato</a>
 						</li>
 						<li class="nav-item ms-md-4 py-lg-1 py-3 d-flex align-items-center">
 
