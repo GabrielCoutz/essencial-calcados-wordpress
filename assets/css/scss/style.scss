@@ -1,0 +1,12 @@
+/*!
+Theme Name: Essencial Calçados
+*/
+
+$theme-colors: (
+  "primary": blue,
+);
+
+@import "bootstrap/bootstrap";
+@import "reset";
+@import "globals";
+@import "header";

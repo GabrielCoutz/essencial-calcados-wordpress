@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Raleway:wght@400&display=swap");
+
+$font-primary: "Poppins", sans-serif;
+$font-display: "Raleway", sans-serif;
+
+$background: #f0f0f0;
+
+$n0: #fff;
+$n1: #a1a1a1;
+$n2: #525252;
+$n3: #292929;
+$n4: #1b1b1b;
+$n5: #0e0e0e;
+
+$border-radius: 8px;
+
+$box-shadow: 0 0 13px hsl(0deg 0% 79% / 25%);
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $background;
+}

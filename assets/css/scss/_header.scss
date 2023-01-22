@@ -1,0 +1,54 @@
+.header {
+  font-family: $font-display;
+  background-color: $n0;
+  border-radius: calc($border-radius * 2);
+  box-shadow: $box-shadow;
+}
+
+[data-icon="carrinho"] {
+  display: inherit;
+  position: relative;
+}
+
+.cartLabel > [data-icon="carrinho"]::after {
+  content: "Meu carrinho";
+  margin-right: 12px;
+}
+
+.carrinho-count {
+  position: absolute;
+  padding: 0.2rem;
+  background: #ff9919;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.9rem;
+  left: 11px;
+  top: -4px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  background-color: $n2;
+  width: 0%;
+  transition: 0.3s width;
+  border-radius: $border-radius;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
