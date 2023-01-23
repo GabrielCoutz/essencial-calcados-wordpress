@@ -120,5 +120,6 @@ function executivos_footer( $name ) {
 <?php wp_footer(); ?>
 </body>
 <script src="<?= get_template_directory_uri(); ?>/assets/js/bootstrap.bundle.min.js"></script>
+<script src="<?= get_template_directory_uri(); ?>/assets/js/script.js"></script>
 
 </html>

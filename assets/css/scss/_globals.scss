@@ -24,7 +24,7 @@ $box-shadow: 0 0 13px hsl(0deg 0% 79% / 25%);
 img:not([src$=".svg"]) {
   max-width: 100%;
   object-fit: cover;
-  border-radius: calc($border-radius * 2);
+  border-radius: $border-radius;
 }
 
 body {
