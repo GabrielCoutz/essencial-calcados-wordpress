@@ -31,9 +31,9 @@ function price_filter( $filters ) { ?>
 	<?php woocommerce_breadcrumb( [ 'delimiter' => ' > ' ] ); ?>
 </div>
 
-<section class="container">
+<section class="container produtos shadow-none">
 	<div class="row">
-		<div class="col-lg-3 col-12 bg-transparent">
+		<div class="col-lg-3 col-12 bg-transparent nav-position">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#filtros"
