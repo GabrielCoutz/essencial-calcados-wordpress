@@ -1,5 +1,4 @@
 <?php
-// Template name: Home
 get_header(); ?>
 <?php
 $products = [];
