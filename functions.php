@@ -11,4 +11,39 @@ function Tryvary_prefix_remove_default_images( $sizes ) {
 }
 add_filter( 'intermediate_image_sizes_advanced', 'Tryvary_prefix_remove_default_images' );
 
+
+function format_products( $products, $img_size = 'woocommerce_thumbnail' ) {
+	$products_final = [];
+	foreach ( $products as $product ) {
+		$products_final[] = [ 
+			'name' => $product->get_name(),
+			'price' => $product->get_price_html(),
+			'link' => $product->get_permalink(),
+			'img' => wp_get_attachment_image_src( $product->get_image_id(), $img_size )[0] ];
+	}
+	return $products_final;
+}
+
+function cards( $dirtyProducts ) {
+	$products = format_products( $dirtyProducts );
+
+	foreach ( $products as $product ) { ?>
+		<li class="col-lg-3 col-6 d-ml-block d-flex justify-content-center">
+			<div class="card">
+				<a href="<?= $product['link']; ?>" class="d-block">
+					<div class="image mb-2">
+						<img src="<?= $product['img']; ?>" alt="<?= $product['name']; ?>" class="img-fluid">
+					</div>
+					<h3 class="title h5 mb-2">
+						<?= $product['name']; ?>
+					</h3>
+					<span class="price h6">
+						<?= $product['price']; ?>
+					</span>
+				</a>
+			</div>
+		</li>
+	<?php }
+}
+
 ?>

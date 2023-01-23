@@ -1,0 +1,45 @@
+.produtos {
+  border-radius: calc($border-radius * 2);
+  box-shadow: $box-shadow;
+  margin: 7rem auto;
+
+  & > h2 {
+    font-family: $font-display;
+  }
+}
+
+.card {
+  font-family: $font-primary;
+
+  .price,
+  .title {
+    font-weight: 400;
+  }
+
+  .price {
+    color: $n3;
+  }
+
+  .price > ins {
+    color: green;
+    margin-left: 0.5rem;
+  }
+
+  .title {
+    color: $n4;
+  }
+
+  .image {
+    overflow: hidden;
+    border-radius: calc($border-radius * 2);
+
+    img {
+      transition: 0.3s all;
+    }
+  }
+
+  .image > img:hover {
+    transform: rotate(2deg);
+    scale: 1.1;
+  }
+}

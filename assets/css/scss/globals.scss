@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Raleway:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Raleway:wght@400&display=swap");
 
 $font-primary: "Poppins", sans-serif;
 $font-display: "Raleway", sans-serif;
@@ -21,7 +21,58 @@ $box-shadow: 0 0 13px hsl(0deg 0% 79% / 25%);
   margin: 0 auto;
 }
 
+img:not([src$=".svg"]) {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: calc($border-radius * 2);
+}
+
 body {
   font-family: $font-primary;
   background-color: $background;
+}
+
+.btn {
+  border-radius: calc($border-radius * 2);
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  border: 2px solid transparent;
+  transition: 0.3s all;
+}
+
+.btn-primary {
+  border-color: $n3;
+  background-color: $n5;
+  color: $n0;
+  box-shadow: $box-shadow;
+  &:hover,
+  &:active,
+  &:focus {
+    transform: scale3d(0.95, 0.95, 1);
+    border-color: $n3 !important;
+    background-color: $n5 !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-secondary {
+  border-color: $n5;
+  background-color: $n0;
+  color: $n5;
+  box-shadow: $box-shadow;
+  &:hover,
+  &:active,
+  &:focus {
+    transform: scale3d(0.95, 0.95, 1);
+    border-color: $n5 !important;
+    background-color: $n0 !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-primary[disabled],
+.btn-secondary[disabled] {
+  transform: none !important;
+  pointer-events: none;
+  opacity: 0.7;
 }

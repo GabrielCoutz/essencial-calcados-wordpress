@@ -43,6 +43,23 @@ function diferencial_model( $diferencial_key ) {
 				<?= diferencial_model( 'diferencial_3' ); ?>
 			</ul>
 		</section>
+
+
+		<?php
+		$data['products'] = wc_get_products( [ 
+			'limit' => 12,
+		] );
+
+		?>
+
+		<main class="container bg-white produtos p-md-4 py-md-5 p-2 py-3 d-flex align-items-center flex-column">
+			<h2 class="fs-2 text-uppercase text-center mb-5 mt-4 mt-md-0">Nossos produtos</h2>
+			<ul class="cards row g-4 list-unstyled">
+				<?= cards( $data['products'] ); ?>
+			</ul>
+			<a class="btn btn-primary my-3" href="/loja">Ver mais</a>
+		</main>
+
 	<?php }
 } ?>
 <?php get_footer(); ?>
