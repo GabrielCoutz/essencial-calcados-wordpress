@@ -13,6 +13,7 @@ $n4: #1b1b1b;
 $n5: #0e0e0e;
 
 $green: rgb(7, 197, 7);
+$blue: #1578df;
 
 $border-radius: 8px;
 
@@ -35,7 +36,9 @@ body {
 }
 
 .btn,
-.single_add_to_cart_button {
+.single_add_to_cart_button,
+.woocommerce a.button.alt,
+.return-to-shop .wc-backward.button.wp-element-button {
   border-radius: calc($border-radius * 2);
   font-size: 1.1rem;
   padding: 0.8rem 2rem;
@@ -44,7 +47,9 @@ body {
 }
 
 .btn-primary,
-.single_add_to_cart_button {
+.single_add_to_cart_button,
+.woocommerce a.button.alt,
+.return-to-shop .wc-backward.button.wp-element-button {
   border-color: $n3;
   background-color: $n5;
   color: $n0;
@@ -79,4 +84,48 @@ body {
   transform: none !important;
   pointer-events: none;
   opacity: 0.7;
+}
+
+.woocommerce-message,
+.woocommerce-info {
+  background-color: $n0;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin: 2rem auto;
+
+  .button.wc-forward.wp-element-button {
+    background: $n0;
+    border: 1px solid $n5;
+    font-weight: 500;
+    border-radius: $border-radius;
+  }
+}
+
+.woocommerce-message {
+  .restore-item {
+    color: $blue;
+    text-decoration: underline;
+  }
+
+  border-color: $green;
+  &::before {
+    color: $green;
+  }
+}
+
+.woocommerce-info {
+  border-color: $blue;
+  &::before {
+    color: $blue;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-index {
+  flex: 1 1;
+  min-height: calc(100vh - 140px);
 }

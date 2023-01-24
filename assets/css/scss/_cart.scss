@@ -18,13 +18,34 @@
       border: none;
     }
   }
+
   .woocommerce-cart-form__cart-item input {
     border: 1px solid $n2;
   }
 
-  table.shop_table th {
-    font-family: $font-primary;
+  .cart_totals {
+    h2 {
+      margin-bottom: 1rem;
+    }
+    background: $n0;
+    padding: 2rem;
+    border-radius: calc($border-radius * 2);
+  }
+
+  table.shop_table th,
+  .cart_totals th {
+    font-family: $font-primary !important;
+    font-weight: 500 !important;
+    font-size: 1.1rem !important;
+  }
+
+  a.button.alt {
+    width: 100%;
+    text-align: center;
     font-weight: 500;
-    font-size: 1.1rem;
+  }
+
+  .return-to-shop .wc-backward.button.wp-element-button {
+    font-weight: 500;
   }
 }

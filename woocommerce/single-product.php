@@ -34,7 +34,7 @@ function format_single_product( $id, $img_size = 'woocommerce_thumbnail' ) {
 	<?php wc_print_notices(); ?>
 </div>
 
-<section class="container">
+<section class="container container-index">
 	<?php
 	if ( have_posts() ) {
 		while ( have_posts() ) {
