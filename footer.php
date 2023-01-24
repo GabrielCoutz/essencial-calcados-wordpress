@@ -13,7 +13,7 @@ function get_attachment_url_by_slug( $slug ) {
 }
 
 function get_social_media_info( $name ) {
-	$social_info = get_field( $name );
+	$social_info = get_field( $name, 18 );
 
 	if ( empty( $social_info['nome'] ) || empty( $social_info['link'] ) )
 		return null;
@@ -44,7 +44,7 @@ function social_media( $data ) {
 <?php
 
 function diferencial_footer( $name ) {
-	$diferencial = get_field( $name );
+	$diferencial = get_field( $name, 18 );
 	if ( empty( $diferencial['frase_apoio'] ) || empty( $diferencial['frase_destaque'] ) )
 		return null;
 	?>
@@ -59,7 +59,7 @@ function diferencial_footer( $name ) {
 <?php }
 
 function executivos_footer( $name ) {
-	$executivo = get_field( $name );
+	$executivo = get_field( $name, 18 );
 	if ( empty( $executivo['nome'] ) || empty( $executivo['contato'] ) )
 		return null;
 	?>

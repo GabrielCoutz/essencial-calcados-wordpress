@@ -46,6 +46,12 @@ function cards( $dirtyProducts ) {
 	<?php }
 }
 
+function essencialcalcados_loop_shop_per_page() {
+	return 12;
+}
+
+add_filter( 'loop_shop_per_page', 'essencialcalcados_loop_shop_per_page' );
+
 add_theme_support( 'woocommerce' );
 
 ?>

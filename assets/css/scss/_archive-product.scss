@@ -1,85 +1,39 @@
-#menu-categorias {
-  gap: 0.5rem;
-}
-#menu-categorias li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+@import "filtros";
 
-  &::before {
-    content: "";
-    width: 18px;
-    display: inline-block;
-    background-color: transparent;
-    height: 18px;
-    border: 2px solid $n5;
-    box-shadow: inset 0 0 0 2px transparent;
-  }
+.pesquisa {
+  border-radius: calc($border-radius * 2);
+  #searchForm {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
 
-  &.current-menu-item::before {
-    background-color: $n5;
-  }
-}
-
-.pesquisa #searchForm {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1rem;
-
-  #s {
-    border: 0;
-    background: #efefef;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    color: black;
-  }
-  button {
-    padding: 0.3rem 2rem;
-    border: none;
-    background: black;
-    color: white;
-    border-radius: 8px;
+    #s {
+      border: 0;
+      background: #efefef;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      color: black;
+    }
+    button {
+      padding: 0.3rem 2rem;
+      border: none;
+      background: black;
+      color: white;
+      border-radius: 8px;
+    }
   }
 }
 
 .cards {
   border-radius: calc($border-radius * 2);
+  justify-content: space-between;
 }
 
 .produtos.shadow-none {
   margin-top: 3rem;
 }
 
-#filtros {
-  form {
-    & > button::before {
-      content: "";
-      width: 18px;
-      display: inline-block;
-      background-color: transparent;
-      height: 18px;
-      border: 2px solid $n5;
-      box-shadow: inset 0 0 0 2px transparent;
-    }
-    & > button {
-      gap: 0.5rem;
-    }
-    &.active > button {
-      pointer-events: none;
-    }
-    &.active > button::before {
-      background-color: $n5;
-    }
-  }
-
-  hr {
-    width: 100%;
-    border: 1px solid black;
-    margin: 2rem 0;
-    opacity: 1;
-  }
-}
 @include media-breakpoint-down(lg) {
   .produtos {
     margin: 0 auto;
@@ -110,6 +64,22 @@
 
     button {
       padding: 0.7rem;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  .page-numbers {
+    padding: 0.2rem 0.7rem;
+    border: 1px solid $n3;
+    border-radius: $border-radius;
+
+    &.current {
+      background-color: $n5;
+      color: $n0;
     }
   }
 }
