@@ -84,7 +84,6 @@ function executivos_footer( $name ) {
 					<?= get_bloginfo(); ?>
 				</h2>
 				<ul class="list-unstyled">
-					<?= print_r( get_field( 'rede_social_1' ) ) ?>
 					<?= social_media( 'rede_social_1' ); ?>
 					<?= social_media( 'rede_social_2' ); ?>
 					<?= social_media( 'rede_social_3' ); ?>
