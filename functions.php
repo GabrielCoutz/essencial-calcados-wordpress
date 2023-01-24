@@ -52,6 +52,11 @@ function essencialcalcados_loop_shop_per_page() {
 
 add_filter( 'loop_shop_per_page', 'essencialcalcados_loop_shop_per_page' );
 
+
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'custom-thumb', 100, 100, true );
+}
+
 add_theme_support( 'woocommerce' );
 
 ?>
