@@ -61,7 +61,8 @@
 										<?= $cart_count; ?>
 									</span>
 								<?php } ?>
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+									class="d-lg-block d-none">
 									<path
 										d="M6.90723 2.4187L3.90723 6.4187V20.4187C3.90723 20.9491 4.11794 21.4578 4.49301 21.8329C4.86809 22.208 5.37679 22.4187 5.90723 22.4187H19.9072C20.4377 22.4187 20.9464 22.208 21.3214 21.8329C21.6965 21.4578 21.9072 20.9491 21.9072 20.4187V6.4187L18.9072 2.4187H6.90723Z"
 										stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -71,8 +72,8 @@
 										d="M16.9072 10.4187C16.9072 11.4796 16.4858 12.497 15.7357 13.2471C14.9855 13.9973 13.9681 14.4187 12.9072 14.4187C11.8464 14.4187 10.8289 13.9973 10.0788 13.2471C9.32865 12.497 8.90723 11.4796 8.90723 10.4187"
 										stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 								</svg>
+								<span class="d-lg-none nav-link">Carrinho</span>
 							</a>
-							<span class="d-lg-none">Carrinho</span>
 						</li>
 					</ul>
 				</div>

@@ -83,3 +83,25 @@
     }
   }
 }
+
+.woocommerce-ordering {
+  display: flex;
+  justify-content: end;
+  padding: 0;
+
+  select {
+    border-radius: $border-radius;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    border: 2px solid $n5;
+    transition: 0.3s all;
+    text-align: start;
+    max-width: 260px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border: 2px solid $n5;
+    }
+  }
+}

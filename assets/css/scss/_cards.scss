@@ -18,12 +18,16 @@
 
   .price {
     color: $n3;
-  }
 
-  .price > ins {
-    color: green;
-    margin-left: 0.5rem;
-    text-decoration: none;
+    ins {
+      color: $green;
+      margin-left: 0.5rem;
+      text-decoration: none;
+    }
+
+    del {
+      color: $n3;
+    }
   }
 
   .title {

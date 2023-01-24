@@ -7,6 +7,18 @@
   }
 }
 
+.produtos .navbar {
+  position: sticky;
+  top: 0;
+
+  @include media-breakpoint-down(lg) {
+    & {
+      position: initial;
+      top: initial;
+    }
+  }
+}
+
 .filtros form > button::before,
 #menu-categorias li::before {
   content: "";

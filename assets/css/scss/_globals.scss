@@ -12,6 +12,8 @@ $n3: #292929;
 $n4: #1b1b1b;
 $n5: #0e0e0e;
 
+$green: rgb(7, 197, 7);
+
 $border-radius: 8px;
 
 $box-shadow: 0 0 13px hsl(0deg 0% 79% / 25%);
@@ -32,7 +34,8 @@ body {
   background-color: $background;
 }
 
-.btn {
+.btn,
+.single_add_to_cart_button {
   border-radius: calc($border-radius * 2);
   font-size: 1.1rem;
   padding: 0.8rem 2rem;
@@ -40,7 +43,8 @@ body {
   transition: 0.3s all;
 }
 
-.btn-primary {
+.btn-primary,
+.single_add_to_cart_button {
   border-color: $n3;
   background-color: $n5;
   color: $n0;

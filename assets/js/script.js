@@ -14,3 +14,18 @@ if (filterId) {
   filter.classList.add("active");
   filter.addEventListener("click", removeParamsFromUrlAndRedirect);
 }
+
+// ----------------------
+
+function watchAddCartBtn([{ isIntersecting }]) {
+  const floatingBtn = document.querySelector(".floating-btn");
+
+  if (!isIntersecting) floatingBtn.classList.remove("d-none");
+  else floatingBtn.classList.add("d-none");
+}
+
+const btn = document.querySelector(".single_add_to_cart_button");
+if (btn) {
+  const observer = new IntersectionObserver(watchAddCartBtn);
+  observer.observe(btn);
+}

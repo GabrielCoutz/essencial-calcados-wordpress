@@ -27,7 +27,6 @@ function price_filter( $filters ) { ?>
 <?php }
 ?>
 <?php if ( ! empty( $products[0] ) ) { ?>
-	<?php woocommerce_catalog_ordering(); ?>
 
 	<div class="container pesquisa bg-white p-3 mt-5 mb-3">
 		<form method="get" id="searchForm" action="<?= bloginfo( 'url' ); ?>/loja">
@@ -114,6 +113,9 @@ function price_filter( $filters ) { ?>
 				</nav>
 			</div>
 			<div class="col-lg-9 col-12 bg-white p-3 cards d-flex flex-column">
+				<div class="row my-3 mb-5">
+					<?php woocommerce_catalog_ordering(); ?>
+				</div>
 				<ul class="row g-4 list-unstyled">
 					<?= cards( $products ); ?>
 				</ul>
