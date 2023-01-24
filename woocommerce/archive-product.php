@@ -31,6 +31,23 @@ function price_filter( $filters ) { ?>
 	<?php woocommerce_breadcrumb( [ 'delimiter' => ' > ' ] ); ?>
 </div>
 
+<div class="container pesquisa bg-white p-3">
+	<form method="get" id="searchForm" action="<?= bloginfo( 'url' ); ?>">
+		<div>
+			<input class="text" type="text" name="s" id="s" placeholder="Nike preto ..." />
+			<button>
+				Pesquisar
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+						stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</button>
+		</div>
+	</form>
+</div>
+
 <section class="container produtos shadow-none">
 	<div class="row">
 		<div class="col-lg-3 col-12 bg-transparent nav-position">

@@ -21,6 +21,25 @@
   }
 }
 
+.pesquisa #searchForm {
+  #s {
+    width: 100%;
+    border: 0;
+    background: #efefef;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: black;
+  }
+  button {
+    padding: 0.3rem 2rem;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 8px;
+  }
+}
+
 .cards {
   border-radius: calc($border-radius * 2);
 }
@@ -56,6 +75,7 @@
 }
 @include media-breakpoint-down(lg) {
   .produtos {
+    margin: 0 auto;
     .navbar-toggler {
       position: sticky;
       top: 0;
