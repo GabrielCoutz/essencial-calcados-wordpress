@@ -1,31 +1,52 @@
 .woocommerce {
-  .woocommerce-thankyou-order-received,
-  .woocommerce-thankyou-order-details {
-    background-color: $n0;
-    border-radius: $border-radius;
-    font-size: 1.3rem;
-    text-align: center;
-    padding: 1rem;
-    margin: 2rem auto;
-  }
   .woocommerce-order-details {
     background-color: $n0;
     padding: 2rem;
     border-radius: calc($border-radius * 2);
     margin: 2rem auto;
 
-    li {
-      @include media-breakpoint-down(md) {
-        border: none;
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .order_details {
+    strong {
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    & ~ p {
+      display: none;
+    }
+
+    th {
+      font-weight: 500 !important;
+      font-size: 1.1rem;
+    }
+
+    td,
+    .product-quantity {
+      font-weight: 400 !important;
+    }
+
+    @include media-breakpoint-down(md) {
+      & {
+        flex-direction: column;
+      }
+      li {
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
       }
     }
   }
 
-  .woocommerce-thankyou-order-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem 1rem;
-    justify-content: center;
-    padding: 2rem;
+  @include media-breakpoint-down(lg) {
+    ul.order_details li {
+      border-right: none;
+    }
   }
 }

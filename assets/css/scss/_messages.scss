@@ -1,6 +1,8 @@
 .woocommerce-message,
 .woocommerce-info,
-.woocommerce-error {
+.woocommerce-error,
+.woocommerce-thankyou-order-received,
+.woocommerce-thankyou-order-details {
   background-color: $n0;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -12,6 +14,24 @@
     font-weight: 500;
     border-radius: $border-radius;
   }
+}
+
+.woocommerce-thankyou-order-received,
+.woocommerce-thankyou-order-details {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 1rem;
+}
+.woocommerce-thankyou-order-received {
+  border: 2px solid $green;
+}
+
+.woocommerce-thankyou-order-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .woocommerce-message {
