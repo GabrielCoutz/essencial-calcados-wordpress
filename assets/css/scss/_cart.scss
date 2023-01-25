@@ -6,7 +6,7 @@
 
   .woocommerce-cart-form {
     margin: 3rem auto;
-    background: $n0;
+    background: $c0;
     border-radius: calc($border-radius * 2);
 
     table {
@@ -22,14 +22,14 @@
   }
 
   .woocommerce-cart-form__cart-item input {
-    border: 1px solid $n2;
+    border: 1px solid $c2;
   }
 
   .cart_totals {
     h2 {
       margin-bottom: 1rem;
     }
-    background: $n0;
+    background: $c0;
     padding: 2rem;
     border-radius: calc($border-radius * 2);
   }

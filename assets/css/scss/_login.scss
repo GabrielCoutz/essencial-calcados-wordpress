@@ -6,7 +6,7 @@ body:not(.logged-in) {
 
     form.login,
     .lost_reset_password {
-      background-color: $n0;
+      background-color: $c0;
       border: none;
       border-radius: calc($border-radius * 2);
       box-shadow: $box-shadow;

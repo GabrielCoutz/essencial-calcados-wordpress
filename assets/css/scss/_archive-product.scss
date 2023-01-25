@@ -13,13 +13,13 @@
       border-radius: 8px;
       padding: 0.5rem 1rem;
       font-size: 1rem;
-      color: black;
+      color: $c5;
     }
     button {
       padding: 0.3rem 2rem;
       border: none;
-      background: black;
-      color: white;
+      background: $c5;
+      color: $c0;
       border-radius: 8px;
     }
   }
@@ -44,7 +44,7 @@
       width: 100%;
       padding: 1rem 2rem;
       border: 2px solid #dbdbdb;
-      background: white;
+      background: $c0;
       font-size: 1.6rem;
     }
     .nav-position {
@@ -53,7 +53,7 @@
       z-index: 1;
     }
     .navbar {
-      background-color: white;
+      background-color: $c0;
     }
   }
 }
@@ -74,12 +74,12 @@
   margin: 2rem auto;
   .page-numbers {
     padding: 0.2rem 0.7rem;
-    border: 1px solid $n3;
+    border: 1px solid $c3;
     border-radius: $border-radius;
 
     &.current {
-      background-color: $n5;
-      color: $n0;
+      background-color: $c5;
+      color: $c0;
     }
   }
 }
@@ -93,7 +93,7 @@
     border-radius: $border-radius;
     font-size: 1.1rem;
     padding: 0.8rem 1rem;
-    border: 2px solid $n5;
+    border: 2px solid $c5;
     transition: 0.3s all;
     text-align: start;
     max-width: 260px;
@@ -101,7 +101,7 @@
     &:hover,
     &:active,
     &:focus {
-      border: 2px solid $n5;
+      border: 2px solid $c5;
     }
   }
 }

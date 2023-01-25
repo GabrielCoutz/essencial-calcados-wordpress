@@ -1,6 +1,6 @@
 .header {
   font-family: $font-display;
-  background-color: $n0;
+  background-color: $c0;
   border-radius: calc($border-radius * 2);
   box-shadow: $box-shadow;
 }
@@ -13,7 +13,7 @@
 .logged-in [data-icon="minha-conta"] {
   display: flex;
   gap: 0.5rem;
-  border-bottom: 1px solid $n1;
+  border-bottom: 1px solid $c1;
 }
 
 .cartLabel > [data-icon="carrinho"]::after {
@@ -29,14 +29,14 @@
 .carrinho-count {
   position: absolute;
   padding: 0.2rem;
-  background: #ff9919;
+  background: $orange;
   border-radius: 50%;
   width: 19px;
   height: 19px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: $c0;
   font-size: 0.9rem;
   left: 11px;
   top: -4px;
@@ -53,7 +53,7 @@
   left: 0;
   bottom: 5px;
   height: 2px;
-  background-color: $n2;
+  background-color: $c2;
   width: 0%;
   transition: 0.3s width;
   border-radius: $border-radius;

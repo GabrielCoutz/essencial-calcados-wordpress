@@ -3,14 +3,14 @@
 .woocommerce-error,
 .woocommerce-thankyou-order-received,
 .woocommerce-thankyou-order-details {
-  background-color: $n0;
+  background-color: $c0;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
   margin: 2rem auto;
 
   .button.wc-forward.wp-element-button {
-    background: $n0;
-    border: 1px solid $n5;
+    background: $c0;
+    border: 1px solid $c5;
     font-weight: 500;
     border-radius: $border-radius;
   }

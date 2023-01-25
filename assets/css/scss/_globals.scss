@@ -1,25 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Raleway:wght@400&display=swap");
-
-$font-primary: "Poppins", sans-serif;
-$font-display: "Raleway", sans-serif;
-
-$background: #f0f0f0;
-
-$n0: #fff;
-$n1: #a1a1a1;
-$n2: #525252;
-$n3: #292929;
-$n4: #1b1b1b;
-$n5: #0e0e0e;
-
-$green: rgb(7, 197, 7);
-$blue: #1578df;
-$red: #ff0b15;
-
-$border-radius: 8px;
-
-$box-shadow: 0 0 13px hsl(0deg 0% 79% / 25%);
-
 .container {
   max-width: 1500px;
   margin: 0 auto;
@@ -34,72 +12,6 @@ img:not([src$=".svg"]) {
 body {
   font-family: $font-primary;
   background-color: $background;
-}
-
-/*
-
-Abaixo são os estilos para botão 'btn' e botão primário 'btn-primary'
-Contém mais seletores apenas para unificar qualquer mudança.
-Assim, qualquer alteração feita, reflete no site todo.
-
-*/
-
-.btn, // classe principal
-.single_add_to_cart_button,
-.woocommerce a.button.alt,
-.return-to-shop .wc-backward.button.wp-element-,
-.woocommerce .woocommerce-form-login .woocommerce-form-login__submit,.woocommerce button.woocommerce-Button.button.wp-element-button,
-#place_order {
-  border-radius: calc($border-radius * 2) !important;
-  font-size: 1.1rem !important;
-  padding: 0.8rem 2rem !important;
-  border: 2px solid transparent !important;
-  transition: 0.3s all !important;
-}
-
-.btn-primary, // classe principal
-.single_add_to_cart_button,
-.woocommerce a.button.alt,
-.return-to-shop .wc-backward.button.wp-element-button,
-.woocommerce .woocommerce-form-login .woocommerce-form-login__submit,.woocommerce button.woocommerce-Button.button.wp-element-button,
-#place_order {
-  border-color: $n3 !important;
-  background-color: $n5 !important;
-  color: $n0 !important;
-  box-shadow: $box-shadow !important;
-  font-weight: 500 !important;
-  &:hover,
-  &:active,
-  &:focus {
-    transform: scale3d(0.95, 0.95, 1);
-    border-color: $n3 !important;
-    background-color: $n5 !important;
-    box-shadow: none !important;
-    color: $n0 !important;
-  }
-}
-
-.btn-secondary {
-  border-color: $n5;
-  background-color: $n0;
-  color: $n5;
-  box-shadow: $box-shadow;
-  font-weight: 500 !important;
-  &:hover,
-  &:active,
-  &:focus {
-    transform: scale3d(0.95, 0.95, 1);
-    border-color: $n5 !important;
-    background-color: $n0 !important;
-    box-shadow: none !important;
-  }
-}
-
-.btn-primary[disabled],
-.btn-secondary[disabled] {
-  transform: none !important;
-  pointer-events: none;
-  opacity: 0.7;
 }
 
 body {
@@ -121,10 +33,12 @@ mark {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: $n5;
+  background: $c5;
   border-radius: $border-radius;
 }
+
 ::-webkit-scrollbar-track {
   background: $background;
 }

@@ -25,16 +25,16 @@
       }
 
       .button.view {
-        background-color: $n0;
-        border: 1px solid $n5;
-        color: $n5;
+        background-color: $c0;
+        border: 1px solid $c5;
+        color: $c5;
         font-weight: 500;
       }
     }
 
     .woocommerce-MyAccount-navigation,
     .woocommerce-MyAccount-content {
-      background-color: $n0;
+      background-color: $c0;
       padding: 2rem;
       border-radius: calc($border-radius * 2);
       box-shadow: $box-shadow;
@@ -47,7 +47,7 @@
         gap: 0.5rem;
 
         *:not(:last-child) {
-          border-bottom: 1px solid $n2;
+          border-bottom: 1px solid $c2;
         }
 
         a {

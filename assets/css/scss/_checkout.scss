@@ -12,7 +12,7 @@
     }
     &:active,
     &:focus {
-      border-color: $n5;
+      border-color: $c5;
     }
   }
 
@@ -52,7 +52,7 @@
     .col-1,
     .col-2,
     .woocommerce-checkout-review-order {
-      background-color: $n0;
+      background-color: $c0;
       padding: 2rem;
       border-radius: calc($border-radius * 2);
       margin: 2rem auto;
@@ -70,14 +70,14 @@
   }
 
   .woocommerce-order-details {
-    background-color: $n0;
+    background-color: $c0;
     padding: 2rem;
     border-radius: calc($border-radius * 2);
     margin: 2rem auto;
   }
 
   #payment {
-    background-color: $n0;
+    background-color: $c0;
     #place_order {
       font-weight: 500;
     }
