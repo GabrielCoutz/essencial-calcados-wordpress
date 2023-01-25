@@ -38,7 +38,8 @@ body {
 .btn,
 .single_add_to_cart_button,
 .woocommerce a.button.alt,
-.return-to-shop .wc-backward.button.wp-element-button {
+.return-to-shop .wc-backward.button.wp-element-button,
+#place_order {
   border-radius: calc($border-radius * 2);
   font-size: 1.1rem;
   padding: 0.8rem 2rem;
@@ -49,7 +50,8 @@ body {
 .btn-primary,
 .single_add_to_cart_button,
 .woocommerce a.button.alt,
-.return-to-shop .wc-backward.button.wp-element-button {
+.return-to-shop .wc-backward.button.wp-element-button,
+#place_order {
   border-color: $n3;
   background-color: $n5;
   color: $n0;

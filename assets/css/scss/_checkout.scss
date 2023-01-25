@@ -1,0 +1,78 @@
+.woocommerce {
+  input,
+  textarea {
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: $border-radius;
+    transition: 0.3s all;
+    background-color: $background;
+
+    &:hover {
+      box-shadow: $box-shadow;
+    }
+    &:active,
+    &:focus {
+      border-color: $n5;
+    }
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    padding: 0.5rem 1rem;
+    height: auto;
+    background-color: $background;
+    border-radius: $border-radius;
+  }
+  .select2-container--default .select2-selection--single {
+    border: none;
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    top: 7px;
+    right: 6px;
+  }
+
+  #ship-to-different-address {
+    #ship-to-different-address-checkbox {
+      width: 20px;
+      height: 20px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  .woocommerce-checkout {
+    .col-1,
+    .col-2,
+    .woocommerce-checkout-review-order {
+      background-color: $n0;
+      padding: 2rem;
+      border-radius: calc($border-radius * 2);
+      margin: 2rem auto;
+
+      @include media-breakpoint-down(lg) {
+        & {
+          width: 100%;
+        }
+      }
+
+      & h3 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  #payment {
+    background-color: $n0;
+    #place_order {
+      font-weight: 500;
+    }
+  }
+}
