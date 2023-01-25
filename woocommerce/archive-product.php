@@ -12,7 +12,7 @@ if ( have_posts() ) {
 
 <?php
 function price_filter( $filters ) { ?>
-	<form id="filtro<?= $filters['id']; ?>">
+	<form id="filtro<?= $filters['id']; ?>" method="get" action="/loja">
 		<input type="hidden" class="d-none" name="f" value='<?= $filters['id']; ?>' />
 		<?php if ( ! empty( $filters['max_price'] ) ) { ?>
 			<input type="hidden" name="max_price" value='<?= $filters['max_price']; ?>' />
