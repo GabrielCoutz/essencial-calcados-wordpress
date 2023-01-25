@@ -14,6 +14,7 @@ $n5: #0e0e0e;
 
 $green: rgb(7, 197, 7);
 $blue: #1578df;
+$red: #ff0b15;
 
 $border-radius: 8px;
 
@@ -86,40 +87,6 @@ body {
   transform: none !important;
   pointer-events: none;
   opacity: 0.7;
-}
-
-.woocommerce-message,
-.woocommerce-info {
-  background-color: $n0;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-  margin: 2rem auto;
-
-  .button.wc-forward.wp-element-button {
-    background: $n0;
-    border: 1px solid $n5;
-    font-weight: 500;
-    border-radius: $border-radius;
-  }
-}
-
-.woocommerce-message {
-  .restore-item {
-    color: $blue;
-    text-decoration: underline;
-  }
-
-  border-color: $green;
-  &::before {
-    color: $green;
-  }
-}
-
-.woocommerce-info {
-  border-color: $blue;
-  &::before {
-    color: $blue;
-  }
 }
 
 body {

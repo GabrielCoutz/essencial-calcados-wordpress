@@ -69,10 +69,26 @@
     }
   }
 
+  .woocommerce-order-details {
+    background-color: $n0;
+    padding: 2rem;
+    border-radius: calc($border-radius * 2);
+    margin: 2rem auto;
+  }
+
   #payment {
     background-color: $n0;
     #place_order {
       font-weight: 500;
     }
+  }
+
+  #billing_company_field {
+    display: none;
+  }
+
+  #billing_address_1_field,
+  #billing_postcode_field {
+    margin-top: 22px;
   }
 }

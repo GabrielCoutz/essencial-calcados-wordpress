@@ -1,0 +1,31 @@
+.woocommerce {
+  .woocommerce-thankyou-order-received,
+  .woocommerce-thankyou-order-details {
+    background-color: $n0;
+    border-radius: $border-radius;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+  .woocommerce-order-details {
+    background-color: $n0;
+    padding: 2rem;
+    border-radius: calc($border-radius * 2);
+    margin: 2rem auto;
+
+    li {
+      @include media-breakpoint-down(md) {
+        border: none;
+      }
+    }
+  }
+
+  .woocommerce-thankyou-order-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+}
