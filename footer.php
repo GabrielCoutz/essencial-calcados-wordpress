@@ -78,7 +78,7 @@ function executivos_footer( $name ) {
 
 <footer class="bg-white p-4 mt-5">
 	<div class="container footer row justify-content-center">
-		<div class="col-md-4 col-12 mb-md-0 mb-4 row">
+		<div class="col-md-3 col-12 mb-md-0 mb-4 row">
 			<div class="content">
 				<h2 class="text-uppercase fs-4 mb-3">
 					<?= get_bloginfo(); ?>
@@ -91,7 +91,7 @@ function executivos_footer( $name ) {
 			</div>
 
 		</div>
-		<div class="col-md-4 col-12 mb-md-0 mb-4 row">
+		<div class="col-md-3 col-12 mb-md-0 mb-4 row">
 			<div class="content">
 				<h2 class="text-uppercase fs-4 mb-3">Diferenciais</h2>
 				<ul class="list-unstyled">
@@ -102,7 +102,7 @@ function executivos_footer( $name ) {
 			</div>
 
 		</div>
-		<div class="col-md-4 col-12 mb-md-0 mb-4 row">
+		<div class="col-md-3 col-12 mb-md-0 mb-4 row">
 			<div class="content">
 				<h2 class="text-uppercase fs-4 mb-3">Nossos Executivos</h2>
 				<ul class="list-unstyled">
@@ -111,7 +111,16 @@ function executivos_footer( $name ) {
 					<?= executivos_footer( 'executivo_3' ); ?>
 				</ul>
 			</div>
-
+		</div>
+		<div class="col-md-3 col-12 mb-md-0 mb-4 row">
+			<div class="content">
+				<h2 class="text-uppercase fs-4 mb-3">Contato</h2>
+				<ul class="list-unstyled">
+					<li>
+						<a href="/contato" class="contato">Fale conosco</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </footer>

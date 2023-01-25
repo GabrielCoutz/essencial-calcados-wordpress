@@ -36,27 +36,38 @@ body {
   background-color: $background;
 }
 
-.btn,
+/*
+
+Abaixo são os estilos para botão 'btn' e botão primário 'btn-primary'
+Contém mais seletores apenas para unificar qualquer mudança.
+Assim, qualquer alteração feita, reflete no site todo.
+
+*/
+
+.btn, // classe principal
 .single_add_to_cart_button,
 .woocommerce a.button.alt,
-.return-to-shop .wc-backward.button.wp-element-button,
+.return-to-shop .wc-backward.button.wp-element-,
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit,.woocommerce button.woocommerce-Button.button.wp-element-button,
 #place_order {
-  border-radius: calc($border-radius * 2);
-  font-size: 1.1rem;
-  padding: 0.8rem 2rem;
-  border: 2px solid transparent;
-  transition: 0.3s all;
+  border-radius: calc($border-radius * 2) !important;
+  font-size: 1.1rem !important;
+  padding: 0.8rem 2rem !important;
+  border: 2px solid transparent !important;
+  transition: 0.3s all !important;
 }
 
-.btn-primary,
+.btn-primary, // classe principal
 .single_add_to_cart_button,
 .woocommerce a.button.alt,
 .return-to-shop .wc-backward.button.wp-element-button,
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit,.woocommerce button.woocommerce-Button.button.wp-element-button,
 #place_order {
-  border-color: $n3;
-  background-color: $n5;
-  color: $n0;
-  box-shadow: $box-shadow;
+  border-color: $n3 !important;
+  background-color: $n5 !important;
+  color: $n0 !important;
+  box-shadow: $box-shadow !important;
+  font-weight: 500 !important;
   &:hover,
   &:active,
   &:focus {
@@ -64,6 +75,7 @@ body {
     border-color: $n3 !important;
     background-color: $n5 !important;
     box-shadow: none !important;
+    color: $n0 !important;
   }
 }
 
@@ -72,6 +84,7 @@ body {
   background-color: $n0;
   color: $n5;
   box-shadow: $box-shadow;
+  font-weight: 500 !important;
   &:hover,
   &:active,
   &:focus {
@@ -97,4 +110,21 @@ body {
 .container-index {
   flex: 1 1;
   min-height: calc(100vh - 140px);
+}
+
+mark {
+  padding: 0.2rem 0.5rem;
+  background-color: #c0dfff;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: $n5;
+  border-radius: $border-radius;
+}
+::-webkit-scrollbar-track {
+  background: $background;
 }

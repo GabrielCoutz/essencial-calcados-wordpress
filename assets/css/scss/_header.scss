@@ -5,13 +5,24 @@
   box-shadow: $box-shadow;
 }
 
-[data-icon="carrinho"] {
+[data-icon="carrinho"],
+[data-icon="minha-conta"] {
   display: inherit;
   position: relative;
+}
+.logged-in [data-icon="minha-conta"] {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid $n1;
 }
 
 .cartLabel > [data-icon="carrinho"]::after {
   content: "Meu carrinho";
+  margin-right: 12px;
+}
+
+.cartLabel > [data-icon="minha-conta"]::after {
+  content: "Minha Conta";
   margin-right: 12px;
 }
 

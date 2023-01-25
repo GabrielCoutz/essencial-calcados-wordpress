@@ -2,7 +2,6 @@
 // Template name: Home
 get_header(); ?>
 
-
 <?php
 
 function diferencial_model( $diferencial_key ) {
@@ -42,12 +41,10 @@ function diferencial_model( $diferencial_key ) {
 			</ul>
 		</section>
 
-
 		<?php
 		$data['products'] = wc_get_products( [ 
 			'limit' => 12,
 		] );
-
 		?>
 
 		<main class="container bg-white produtos p-md-4 py-md-5 p-2 py-3 d-flex align-items-center flex-column">

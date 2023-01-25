@@ -1,5 +1,7 @@
 .woocommerce {
-  .woocommerce-order-details {
+  .woocommerce-order-details,
+  .woocommerce-column--1,
+  .woocommerce-column--2 {
     background-color: $n0;
     padding: 2rem;
     border-radius: calc($border-radius * 2);
