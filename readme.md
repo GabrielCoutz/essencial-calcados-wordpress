@@ -11,6 +11,7 @@ Para desenvolvê-lo, foram utilizados:
 ![Wordpress](https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
 
 Seus dados, fictícios, são provindos do Wordpress, sendo acessados via PHP com métodos do WooCommerce.
+Também conta com campos personalizáveis, com o plugin Advanced Custom Fields.
 
 Meu foco durante o desenvolvimento foi a interação do Wordpress com Woocommerce, então para aumentar a velocidade e produtividade foi utilizado o Bootstrap com SASS.
 Assim, disponibilizando tempo para conhecer e utilizar o Wordpress e Woocommerce.
