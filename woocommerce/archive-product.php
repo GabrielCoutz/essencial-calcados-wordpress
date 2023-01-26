@@ -12,7 +12,7 @@ if ( have_posts() ) {
 
 <?php
 function price_filter( $filters ) { ?>
-	<form id="filtro<?= $filters['id']; ?>" method="get" action="/loja">
+	<form id="filtro<?= $filters['id']; ?>" method="get" action="<?= $_SERVER['REQUEST_URI']; ?>">
 		<input type="hidden" class="d-none" name="f" value='<?= $filters['id']; ?>' />
 		<?php if ( ! empty( $filters['max_price'] ) ) { ?>
 			<input type="hidden" name="max_price" value='<?= $filters['max_price']; ?>' />
@@ -53,6 +53,11 @@ function price_filter( $filters ) { ?>
 							Filtros
 						</button>
 						<div class="collapse navbar-collapse flex-column align-items-start fs-5 mx-3 accordion filtros">
+							<div class="w-100 my-lg-0 mb-lg-3 my-3">
+								<a href="/loja" class="btn btn-primary d-block text-center">Limpar
+									filtros</a>
+							</div>
+
 							<div class="accordion-item bg-transparent border-0 rounded-0 w-100">
 								<h2 class="accordion-header border-0" id="accordion-filtro1">
 									<button class="accordion-button fs-5 text-black border-0 bg-transparent px-0 rounded-0 shadow-none"
